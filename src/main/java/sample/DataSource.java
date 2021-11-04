@@ -10,9 +10,9 @@ public class DataSource {
     private static HikariDataSource ds;
 
     static {
-        config.setJdbcUrl( "jdbc:mysql://localhost:3306/mega_offers_app");
-        config.setUsername( "root" );
-        config.setPassword( "password" );
+        config.setJdbcUrl( "jdbc:mysql://url:port/db-name");
+        config.setUsername( "db-username" );
+        config.setPassword( "db-password" );
         config.addDataSourceProperty( "cachePrepStmts" , "true" );
         config.addDataSourceProperty( "prepStmtCacheSize" , "250" );
         config.addDataSourceProperty( "prepStmtCacheSqlLimit" , "2048" );
